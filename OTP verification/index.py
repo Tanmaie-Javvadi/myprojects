@@ -16,8 +16,8 @@ class otp_verifier(Tk):
     def OTP(self):
         self.n=str(random.randrange(1000,10000))
         #self.client=twilio_client("ACfe3e27bad88af002454c5ef4a9b68300","95d95369ba31e555c710d2f95c52e13b"),
-        self.twilio_client.messages.create(to="+91-9392135462",
-                                    from_="+16413816146",
+        self.twilio_client.messages.create(to="+91-xxxxxxxxxx",
+                                    from_="+xxxxxxxxx",
                                     body=self.n)
         
         return self.n
